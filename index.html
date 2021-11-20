@@ -8,6 +8,109 @@
     <link rel="stylesheet" href="C:\Users\Michael's PC\Desktop\Markdown-Previewer\style.css">
 </head>
 <body>
+
+    <script src="./node_modules/marked/marked.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.2/marked.min.js" integrity="sha512-hzyXu3u+VDu/7vpPjRKFp9w33Idx7pWWNazPm+aCMRu26yZXFCby1gn1JxevVv3LDwnSbyKrvLo3JNdi4Qx1ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.2/marked.js" integrity="sha512-rl95td2PsxUGaWwW42m6bEx7Llgg6v+UmkUDrSQp8V0ggoX7uoalk/ovUfeccGrX5QW7JuzFPLegNTTr6ekV6g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <textarea id="editor"></textarea>
+
+    <div id="preview"></div>
+
     
+    <script>
+        $(document).ready(function(){
+            $("#editor").on("keyup", function() {
+                $("#preview").html(marked.parse($(this).val()))
+                console.log($(this).val());
+                console.log(marked.parse($(this).val()));
+            })
+        })
+    </script>
+     
+    <h1>Hello</h1>
+    <h2>hello</h2>
+    <h3>hello</h3>
+
+     <div id="content"></div>
+     
+     <script>
+         var markdownValue = "| First Header | Second Header |\n" +
+                            "| ----------| ----------|\n" +
+                            "|content Cell | content Cell|\n";
+
+
+        var markdownValue2 = "- this is shit\n" +
+                                "- also shit\n"
+         console.log(markdownValue);
+         console.log(marked.parse(markdownValue2));
+         document.getElementById("content").innerHTML = marked.parse(markdownValue2);
+     </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+
+   
+
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="C:\Users\Michael's PC\Desktop\Markdown-Previewer\app.js"></script>
+
+    <script src="C:\Users\Michael's PC\Desktop\Markdown-Previewer\bower_components\showdown\dist\showdown.min.js"></script>
+    
+
+    <script>
+        var converter = new showdown.Converter();
+        
+        text = '- hello, markdown!\n' +
+                '      - hello'
+        html = converter.makeHtml(text);
+
+        console.log(html);
+        
+    </script>
+
 </body>
 </html>

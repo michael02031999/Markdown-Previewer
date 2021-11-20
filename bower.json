@@ -1,0 +1,20 @@
+{
+  "name": "Markdown-Previewer",
+  "homepage": "https://github.com/michael02031999/Markdown-Previewer",
+  "authors": [
+    "michael020399 <michael.galan@uconn.edu>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "showdown": "^1.9.1"
+  }
+}
